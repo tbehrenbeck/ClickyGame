@@ -1,0 +1,15 @@
+.header {
+  background-image: url("https://ak7.picdn.net/shutterstock/videos/7770637/thumb/1.jpg");
+  background-size: cover;
+  height: 480px;
+}
+
+.header h1 {
+  margin: 0;
+  padding-top: 175px;
+  text-align: center;
+  color: #84a1a9;
+  text-shadow: -1px -1px 0 #1e4789, 1px -1px 0 #1e4789, -1px 1px 0 #1e4789,
+    1px 1px 0 #1e4789;
+  font-size: 5rem;
+}
