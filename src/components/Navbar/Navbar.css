@@ -1,0 +1,14 @@
+.navbar {
+  height: 70px;
+  background-color: #84a1a9;
+}
+.navbar-brand {
+  font-size: 30px;
+  margin-left: 15px;
+}
+.scores {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 15px;
+  float: left;
+}
