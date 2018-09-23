@@ -34,12 +34,12 @@ class App extends Component {
     }
     if (!clickedArr.includes(guess)) {
       // Array doesn't include user's guess ("win")
-      this.setState({ message: "Good guess!" });
+      this.setState({ message: "Good Guess" });
       clickedArr.push(guess);
 
       // Check if user won (cliked all pics without clicking a pic twice)
       if (clickedArr.length === wonder.length) {
-        this.setState({ message: "You win!" });
+        this.setState({ message: "You Win" });
       }
 
       this.setState({
@@ -49,7 +49,7 @@ class App extends Component {
       });
     } else {
       // Array does include user's guess ("lose")
-      this.setState({ message: "So close..." });
+      this.setState({ message: "Oops, Try Again" });
       updatedTopScore--;
       clickedArr = [];
       this.setState({
@@ -74,8 +74,8 @@ class App extends Component {
 
   // Handle a click
   handleClick = id => {
-    console.log(`Already clicked on: ${this.state.clicked}`);
-    console.log(`Clicked ID: ${id}`);
+    console.log(`Already clicked picture: ${this.state.clicked}`);
+    console.log(`Clicked picture: ${id}`);
     this.guessChecker(id);
   };
 
